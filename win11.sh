@@ -7,7 +7,7 @@ clear
 echo "Windows 11"
 read -p "Paste authtoken here (Copy and Right-click to paste): " CRP
 ./ngrok authtoken $CRP 
-nohup ./ngrok tcp --region eu 30889 &>/dev/null &
+nohup ./ngrok tcp --region in 30889 &>/dev/null &
 yum install sudo -y
 echo "Downloading QEMU"
 sudo yum install -y qemu-kvm
